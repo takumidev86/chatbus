@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, CssBaseline, Grid } from "@material-ui/core";
+import { Container, CssBaseline, Grid, Paper } from "@material-ui/core";
+import Header from "./components/Header/Header";
 
 interface Props {}
 
@@ -8,16 +9,17 @@ const App: React.FC<Props> = (props) => {
 
   return (
     <Container component="main" maxWidth="xl">
+      <Header />
       <CssBaseline />
-      <Grid container spacing={3}>
+      <Grid container spacing={1}>
         <Grid item xs={3}>
-          bus
+          <Paper>item1</Paper>
         </Grid>
         <Grid item xs={6}>
-          bus
+          <Paper>item2</Paper>
         </Grid>
         <Grid item xs={3}>
-          bus
+          <Paper>item3</Paper>
         </Grid>
       </Grid>
     </Container>
